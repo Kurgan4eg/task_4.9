@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Информация о заказе - Моя первая веб-страница</title>
+</head>
+<body style="color: beige; background-color: black;">
+    <img title="The_witchers" src="https://gwentguru.info/assets/images/guide/2018/vesmak-schools-7.jpg" width="700" height="300">
+    <header>
+        <a title="Главная" href="../index.html">Главная</a>
+        <a title="О нас" href="about.html">О нас</a>
+        <a title="Информация о заказе" href="#">Информация о заказе</a>
+        <a title="Контакты" href="contacts.html">Контакты</a>
+    </header>
+    <main>
+        <h1 class="form">Информация о заказе</h1>
+        <!--Немного изменил формат сайта-->
+        <form>
+            <fieldset>
+                <legend>Форма заказа</legend>
+        <p>Мы лучшие в своем деле. Сделаем всё для вас.</p>
+        <p>Введите <strong>Имя</strong><br><input type="text" name="person's name" placeholder="Введите имя" required="required"></p>
+        <p>Введите <strong>Фамилию</strong><br><input type="text" name="surname" placeholder="Введите фамилию" required="required"></p>
+        <p>Ваш пол</p>
+        муж <input type="radio" name="gender" value="male" checked>
+        жен <input type="radio" name="gender" value="female"><br>
+        <p>Цвет письма используемый вашим домом</p>
+        <input type="color" name="colorlist" value="#cc0000">
+        <!--Узнаем информацию о человеке-->
+        <p>Чего бы вы хотели?</p>
+        <input type="checkbox" name="type1" value="earnings">Уничтожение чудовищ<br>
+        <input type="checkbox" name="type1" value="distant work">Снятие порчи <br>
+        <input type="checkbox" name="type1" value="privileges">Разобраться с неприятелем <br>
+        <input type="checkbox" name="type1" value="schedule">Научиться варить ведьмачьи зелья <br>
+        <!--Даем выбор для человека, что он именно хочет-->
+        <p>Выберете исполнителя </p>
+        <select name="executor">
+            <optgroup label="Школа Кота">
+                <option label="Бреген">Бреген</option>
+                <option label="Гухарт">Гухарт</option>
+                <option label="Гаэтан">Гаэтан</option>
+                <option label="Гезрас">Гезрас</option>
+            <optgroup label="Школа Волка">
+                <option label="Геральт из Ривии">Геральт из Ривии</option>
+                <option label="Весемир" disabled>Весемир</option>
+                <!--Весемир погиб-->
+                <option label="Эскель">Эскель</option>
+                <option label="Ламберт">Ламберт</option>
+            <optgroup label="Школа Змеи">
+                <option label="Лето из Гулеты">Лето из Гулеты</option>
+                <option label="Ивар Злобоглаз">Ивар Злобоглаз</option>
+                <option label="Эган">Эган</option>
+                <option label="Геррин из Харькова">Геррин из Харькова</option>
+            <optgroup label="Школа Медведя">
+                <option label="Арнагад">Арнагад</option>
+                <option label="Герд">Герд</option>
+                <option label="Иво из Бельхавена">Иво из Бельхавена</option>
+                <option label="Юнод из Бельхавена">Юнод из Бельхавена</option>
+            <optgroup label="Школа Мантикоры">
+                    <option label="Иван">Иван</option>
+                    <option label="Мертен">Мертен</option>
+                <!--Школа Мантикоры самая малочисленная, поэтому меньше вариантов-->
+        </select>
+            
+        
+        <p>Сколько денег вы готовы потратить для этого ?</p>
+        <select name="money">           
+            <option label="100 крон">100 крон</option>
+            <option label="150 крон">150 крон</option>
+            <option label="300 крон">300 крон</option>
+            <option label="500 крон">500 крон</option>
+            <option label="Нисколько" disabled> Нисколько </option>
+            <!-- disabled для самых наглых, что бы не могли выбрать-->
+        </select>
+        <br>
+        <br>Когда начинать?
+        <input type="date" name="visit" value="2023-03-17" min="2023-03-17" max="2023-04-12">
+        <br>
+         <!--Раньше не смогут совершить заказ, а 12 апреля дедлайн, -->
+         Ваш почтовый ящик
+        <br>    
+         <input type="email" name="mail">
+        <br>
+         Ваш почтовый голубь
+         <br>
+         <input type="tel" name="phone">
+        <p ><button>Отправить</button>
+            <!--Ввод данных для связи-->
+        </fieldset>
+        <!--обведем все в блок с заголовком-->
+    </form>
+    </main>
+    <footer>
+            <span>&copy;&nbsp;Skillfactory</span>
+    </footer>
+</body>
+</html>
